@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Navbar */
+.nav-back{
+    background: rgba(25, 232, 247, 0.8);
+}
+.navbar-brand{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+.nav-link{
+    color: #000;
+    font-size: 20px;
+}
+.nav-link:hover{
+    color: #fff;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+/* End of navbar */
+#hero{
+    width: 100%;
+    height: 80vh;
+    background: url(../Images/Dr.jpg) no-repeat center center/cover;
+}
+#container{
+    margin: 10% auto;
+    width: 100%;
+}
+ #hero .container{
+    padding-top: 80px;
+}
+#hero::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80vh;
+}
+#hero h1{
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #fff;
+}
+#hero h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: light;
+    line-height: 56px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.Main-btn{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+.Main-btn:hover{
+    background: rgba(20, 219, 233, 0.8) ;
+    border: 2px solid  rgba(20, 219, 233, 0.8);
+    color: #fff;
+}
+.service{
+   padding: 70px 20px 80px 20px ;
+   text-align: center;
+   background: rgba(20, 219, 233, 0.8) ;
+}
+.service .icon{
+    margin: 0 auto;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+}
+.service .icon i{
+    font-size: 32px;
+    line-height: 1;
+    position: relative;
+    color: #47aeff;
+}
+.service h4{
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+}
+.service p{
+    line-height: 25px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+/* End of Services */
+.about-section{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.about-heading{
+    text-transform: uppercase;
+}
+.about-heading-upper{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.about-heading-lower{
+    display: block;
+    font-size: 2.9rem;
+    font-weight: lighter;
+}
+.bg-faded{
+    background: rgba(20, 219, 233, 0.8);
+}
+.about-button a{
+    background: #03a59a;
+    color: #fff;
+    font-weight: bold;
+    float: center;
+}
+.about{
+    position: relative;
+}
+@media(min-width :992px) {
+    .about .about-img{
+        width: 65%;
+        height: 75vh;
+        float: right;
+    }
+    .about .about-text{
+        left: 0;
+        width: 50%;
+        margin-top: 6rem;
+        position: absolute;
+    }
+    .about .about-text p{
+        font-size: 1.2rem;
+    }
+    .about .about-text .about-button{
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+}
+@media(min-width:1200px) {
+    .about .about-text{
+        width: 50%;
+    }
+}
+/* medical camp */
+.camp{
+    background-color: #11dbcf;
+    padding-bottom: 0;
+}
+.camp h2{
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+.camp-grid{
+    margin-top: 65px;
+}
+.camp-grid .row{
+    margin: 0;
+}
+.camp-grid .row > div{
+    padding: 0;
+}
+.camp-grid .row > div .card img{
+    width: 100%;
+}
+.camp-grid .row > div .card .camp-text{
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.camp-grid .row > div .card .camp-text > div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.camp-grid .row > div .card .camp-text .card-title{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.camp-grid .row > div .card .camp-text .card-text{
+    color: #fff;
+    opacity: 70;
+    padding: 0 45px;
+}
+.camp-grid .row > div .card:hover .camp-text{
+        opacity: 1;
+        visibility: visible;
+}
+/* end of medical camps section */
+/* Team */
+.team{
+    background: #fff;
+}
+.team .member{
+    position: relative;
+    box-shadow: 1px 2px 10px #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.team .member .image{
+    overflow: hidden;
+    width: 400px;
+    height: 450px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+.team .member .image img{
+    transition: ease-in-out 0.3s;
+}
+.team .member:hover img{
+    transform: scale(1.1);
+}
+.team .member h4{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #000;
+}
+.team .member span{
+    display: block;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: bold;
+}
+.team .member span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background:#5fe0c0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.team .member p{
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+}
+.team .social{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.team .social a{
+    transition: ease-in-out .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    background:#11bdcf;
+}
+/* Contact Page */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+.contact-col div{
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fas{
+    font-size: 28px;
+    color: #11dbcf;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+    text-align: left;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.btn-send{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(22, 228, 211);
+    border: 1px solid rgb(108, 227, 243);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn-send:hover{
+    background: #11dbcf;
+    color: #fff;
+}
+.footer{
+    text-align: center;
+    font-size: 15px;
+    background: rgba(25, 232, 247, 0.8);
+}
+.footer .btn-back{
+    background-color: #fff;
+    color: #00d9ff;
+}
+footer .text{
+    color: #000;
+}
+.btn-social i{
+    font-size: 22px;
+}
